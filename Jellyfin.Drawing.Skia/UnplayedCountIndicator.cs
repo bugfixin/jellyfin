@@ -17,6 +17,7 @@ namespace Jellyfin.Drawing.Skia
             {
                 paint.Color = SKColor.Parse("#CC00A4DC");
                 paint.Style = SKPaintStyle.Fill;
+                paint.IsAntialias = true;
                 canvas.DrawCircle((float)x, OffsetFromTopRightCorner, 20, paint);
             }
             using (var paint = new SKPaint())
